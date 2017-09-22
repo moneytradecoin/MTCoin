@@ -1103,8 +1103,8 @@ int64 static GetBlockValue(int nBits, int nHeight, int64 nFees)
 
 
 // Launch specs
-static const int64 nTargetTimespan = 1 * 300; // MoneyTradeCoin: each block
-static const int64 nTargetSpacing = 1 * 300; // MoneyTradeCoin: 300 seconds
+static const int64 nTargetTimespan = 3 * 60; // MoneyTradeCoin: each block
+static const int64 nTargetSpacing = 3 * 60; // MoneyTradeCoin: 300 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 
@@ -3116,7 +3116,7 @@ bool InitBlockIndex() {
       //vMerkleTree: 3f66108684400d84e2ffb528360d534fa19ecaf47c7c4c2ca1d1352ec4a351ad
 
         // Genesis block
-        const char* pszTimestamp = "Opera";
+        const char* pszTimestamp = "MoneyTrade";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -3130,7 +3130,7 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1390095618;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 4145774;
+        block.nNonce   = 2954329;
 
         if (fTestNet)
         {

@@ -1088,13 +1088,13 @@ int64 static GetBlockValue(int nBits, int nHeight, int64 nFees)
 {
     int64 nSubsidy = 0 * COIN;
 
-    if(nHeight <= 84)
+    if(nHeight <= 105)
     {
        nSubsidy = 1000000 * COIN;
     }
     else if (nHeight <= REWARD_CUT_BLOCK)
     {
-        nSubsidy = 1 * COIN;
+        nSubsidy = 0 * COIN;
     }
 
 
@@ -1103,8 +1103,8 @@ int64 static GetBlockValue(int nBits, int nHeight, int64 nFees)
 
 
 // Launch specs
-static const int64 nTargetTimespan = 1 * 300; // MoneyTradeCoin: each block
-static const int64 nTargetSpacing = 1 * 300; // MoneyTradeCoin: 300 seconds
+static const int64 nTargetTimespan = 3 * 60; // MoneyTradeCoin: each block
+static const int64 nTargetSpacing = 3 * 60; // MoneyTradeCoin: 300 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 
