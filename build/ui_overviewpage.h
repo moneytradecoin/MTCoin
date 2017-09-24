@@ -123,7 +123,7 @@ public:
         labelBalance->setObjectName(QStringLiteral("labelBalance"));
         labelBalance->setFont(font);
         labelBalance->setCursor(QCursor(Qt::IBeamCursor));
-        labelBalance->setText(QStringLiteral("0 OCN"));
+        labelBalance->setText(QStringLiteral("0 MTC"));
         labelBalance->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(0, QFormLayout::FieldRole, labelBalance);
@@ -137,7 +137,7 @@ public:
         labelUnconfirmed->setObjectName(QStringLiteral("labelUnconfirmed"));
         labelUnconfirmed->setFont(font);
         labelUnconfirmed->setCursor(QCursor(Qt::IBeamCursor));
-        labelUnconfirmed->setText(QStringLiteral("0 OCN"));
+        labelUnconfirmed->setText(QStringLiteral("0 MTC"));
         labelUnconfirmed->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(1, QFormLayout::FieldRole, labelUnconfirmed);
@@ -150,7 +150,7 @@ public:
         labelImmature = new QLabel(frame);
         labelImmature->setObjectName(QStringLiteral("labelImmature"));
         labelImmature->setFont(font);
-        labelImmature->setText(QStringLiteral("0 OCN"));
+        labelImmature->setText(QStringLiteral("0 MTC"));
         labelImmature->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         formLayout_2->setWidget(2, QFormLayout::FieldRole, labelImmature);
@@ -243,7 +243,7 @@ public:
         OverviewPage->setWindowTitle(QApplication::translate("OverviewPage", "Form", 0));
         label_5->setText(QApplication::translate("OverviewPage", "Wallet", 0));
 #ifndef QT_NO_TOOLTIP
-        labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the OperaCoin network after a connection is established, but this process has not completed yet.", 0));
+        labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the MoneyTradeCoin network after a connection is established, but this process has not completed yet.", 0));
 #endif // QT_NO_TOOLTIP
         label->setText(QApplication::translate("OverviewPage", "Balance:", 0));
 #ifndef QT_NO_TOOLTIP
@@ -260,7 +260,7 @@ public:
         label_wallet_bgcoin->setText(QString());
         label_4->setText(QApplication::translate("OverviewPage", "<b>Recent transactions</b>", 0));
 #ifndef QT_NO_TOOLTIP
-        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the OperaCoin network after a connection is established, but this process has not completed yet.", 0));
+        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the MoneyTradeCoin network after a connection is established, but this process has not completed yet.", 0));
 #endif // QT_NO_TOOLTIP
     } // retranslateUi
 
